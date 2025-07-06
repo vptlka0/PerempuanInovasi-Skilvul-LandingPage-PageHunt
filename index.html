@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pageHunt!</title>
+    <link rel="stylesheet" href="Style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+
+<body onscroll="functionScroll()">
+    <header class="header colorHeaderDefault sticky" id="header">
+        <img src="https://66j37b6jjr.ufs.sh/f/8NsSnXzcTD7uUDeynrJIBYE5V6yGptCTlQK93m0FNZ4R87qA" alt="logo PageHunt"
+            id="logo">
+        <!-- hamburger bar -->
+        <button class="hamburger" id="nav-burger" onclick="toggleMenu()">
+            <img src="https://66j37b6jjr.ufs.sh/f/8NsSnXzcTD7uSTOb7wyF0vKziILXWN62pbAYrVCMUatO5ZqP"
+                alt="hamburger icon">
+        </button>
+        <!-- navbar -->
+        <nav class="navbar body2" id="nav">
+            <a onclick="berandaNavClick()" class="nav-link" id="Navbar-beranda">Beranda</a>
+            <a onclick="tentangKamiNavClick()" class="nav-link" id="Navbar-Us">Tentang Kami</a>
+            <a onclick="produkNavClick()" class="nav-link" id="Navbar-produk">Produk</a>
+            <a onclick="testimoniNavClick()" class="nav-link" id="Navbar-testimoni">Testimoni</a>
+            <button onclick="closeStatClick()" class="cta-button-primary headline">Daftar Sekarang</button>
+        </nav>
+    </header>
+
+    <!-- hero -->
+    <div class="hero marginBott100px" id="hero">
+        <div class="heroSection">
+            <div class="heroContent">
+                <H1 class="h1">Baca Buku Rasa Main </H1>
+                <H1 class="h1 marginBott30px"> Game, LET'S GO! </H1>
+
+                <!-- Buat highlight -->
+                <p class="body1" id="description"> ini dia aplikasi gamifikasi yang bantu kamu jadi pembaca keren!</p>
+                <span class="body1 highlightBlue">ikutan challenge</span>
+                <span class="body1">kumpulkan</span>
+                <span class="body1 highlightBlue">score xp</span>
+                <span class="body1">tandingin teman di</span>
+                <span class="body1 highlightBlue">streak</span>
+                <p class="body1 marginBott30px"> dan buktiin kamu #PembacaKeren</p>
+                <div class="flexGapHero">
+                    <button onclick="closeStatClick()" class="cta-button-primary headline">Daftar Sekarang</button>
+                </div>
+            </div>
+            <div class="imgSet">
+                <div class="lottieSetBottomLeft">
+                    <dotlottie-player class="lottieSize"
+                        src="https://lottie.host/92051209-e7b8-413b-8278-82cfb7e54a00/gkwSM8UnWN.lottie"
+                        background="transparent" speed="1" loop autoplay>
+                    </dotlottie-player>
+                </div>
+                <img class="imgSizeBig"
+                    src="https://66j37b6jjr.ufs.sh/f/8NsSnXzcTD7u52LyqXvb4G6dEfLNhcxm0ownqRzYrU9sDylB"
+                    alt="imageHeroPage">
+            </div>
+        </div>
+
+        <!-- quote: done-->
+        <div class="quote">
+            <div class="imgSet">
+                <div class="lottieSetTopRight">
+                    <dotlottie-player src="https://lottie.host/fa433f32-dfe6-49f3-8c21-7227b8210da3/XHpcZ8aM2U.lottie"
+                        background="transparent" speed="1" style="width: 300px; height: 300px" loop
+                        autoplay></dotlottie-player>
+                </div>
+                <img class="imgSizeMedium"
+                    src="https://66j37b6jjr.ufs.sh/f/8NsSnXzcTD7uoo5dqsADeq2QU8u0nYJlHSs7NacyEhFbp9Zr"
+                    alt="buku Atomic Habits" />
+            </div>
+            <blockquote class="section1">
+                <p class="h4 marginBott30px">Kata James Clear di Atomic Habits, untuk membentuk
+                    kebiasaan baik:</p>
+                <div class="quote marginBott30px">
+                    <div class="body1 cardPoint">
+                        <div>Make it obvious</div>
+                        <div> <strong> (terlihat) 👀 </strong></div>
+                    </div>
+                    <div class="body1 cardPoint">
+                        <div>Make it attractive </div>
+                        <div> <strong>(menarik) 🎮 </strong></div>
+                    </div>
+                    <div class="body1 cardPoint">
+                        <div>Buat Lingkungan yang </div>
+                        <strong>Mendukung 👫👫</strong>
+                    </div>
+                </div>
+                <p class="body1 sectionTextCenter">PageHunt dibangun berdasarkan 3 prinsip tersebut</p>
+            </blockquote>
+        </div>
+    </div>
+
+    <!-- Tentang Kami / Us / About Us -->
+    <div id="tentangKami" class="marginBott100px">
+        <!-- tite & Subtititle : done -->
+        <div class="titleSubtitleCenter marginBott30px">
+            <h2 class="marginBott10px h2">📖 Tentang Kami</h2>
+            <p class="body1"> Hai! Kami di balik aplikasi baca yang bikin baca buku jadi seru kayak main game 🎮📚 kami
+            </p>
+            <p class="body1"> Kami tahu kok… Baca buku itu penting banget, tapi kadang ngebosenin, susah mulai, dan
+                apalagi kalau sendirian 😩 </p>
+        </div>
+        <!-- section 1: Kenapa Baca buku itu penting-->
+        <div class="section">
+            <div>
+                <H2 class="h2 marginBott10px ">Kenapa Baca Buku itu Penting? </H2>
+                <p class="body1 marginBott30px">Karena... literasi kita lagi gawat banget! 😥 Menurut data PISA 2022,
+                    Indonesia masih punya PR besar dalam hal baca-membaca:</p>
+                <!-- jadi card -->
+                <p class="body1 marginBott30px cardPoint">Peringkat Global, <strong> Indonesia ke 70 dari 80 </strong>
+                    negara peserta</p>
+                <p class="body1 marginBott30px cardPoint"> Skor membaca siswa Indonesia = <strong>359 poin. </strong>
+                </p>
+                <div class="marginBott30px cardPoint">
+                    <p class="body1"> <strong>Hanya 25% siswa</strong> yang mencapai level minimum memahami bacaan
+                        (Level 2). </p>
+                    <p class="body1"> 😔 Artinya cuma <strong>1 dari 4 siswa</strong> yang bisa ngerti isi bacaan dengan
+                        baik </p>
+                </div>
+
+                <p class="body1 marginBott30px"> Tapi tenang, bukan berarti kita gak bisa berubah. 💪 Masalahnya bukan
+                    karena anak-anak Indonesia gak mau baca, tapi karena belum nemu cara yang seru dan konsisten buat
+                    mulai!</p>
+            </div>
+            <img class="imgSizeBig" src="https://66j37b6jjr.ufs.sh/f/8NsSnXzcTD7uzf8tAwXHP3fT2usLhiNYaBCnFOIRGewoUbc1"
+                alt="petaDunia">
+        </div>
+
+        <!-- section 2: Misi Kami Sederhana : Done-->
+        <div class="section marginBott30px">
+            <img class="imgSizeBig" src="https://66j37b6jjr.ufs.sh/f/8NsSnXzcTD7uwNm51qjuCrsX9JjTzUBZEqFHhP1lepcibvNV"
+                alt="imageFitur1">
+            <div>
+                <H2 class="h2 marginBott10px">Misi Kami Sederhana </H2>
+                <p class="body1 marginBott30px">Bikin kamu jatuh cinta sama baca buku, tanpa paksaan.
+                    Pelan-pelan tapi konsisten. Dari 1 halaman ke 1 buku, dari 1 buku ke 100. 🚀</p>
+                <div class="flexGapButton">
+                    <!-- playstore -->
+                    <button class="cta-button-icon">
+                        <a
+                            href="https://www.figma.com/proto/ywPC7bWSaC2ynZyzOwFfid/PageHunt-?node-id=103-42615&t=jltEDj6RutSo8qGm-0&scaling=min-zoom&content-scaling=fixed&page-id=21%3A11673&starting-point-node-id=103%3A42615&show-proto-sidebar=1"><img
+                                class="iconButtonSize"
+                                src=https://utfs.io/f/48bdc690-d79f-4685-a44f-930c4d56a146-86epzc.png
+                                alt="playstore (link ke figma produk)"></a>
+                    </button>
+                    <!-- appstore -->
+                    <button class="cta-button-icon">
+                        <a
+                            href="https://www.figma.com/proto/ywPC7bWSaC2ynZyzOwFfid/PageHunt-?node-id=103-42615&t=jltEDj6RutSo8qGm-0&scaling=min-zoom&content-scaling=fixed&page-id=21%3A11673&starting-point-node-id=103%3A42615&show-proto-sidebar=1"><img
+                                class="iconButtonSize"
+                                src=https://utfs.io/f/2c7a63d7-4325-47f9-b8eb-71e418c310ef-2mj18s.png alt="playstore">
+                        </a>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Produk -->
+    <div id="produk" class="marginBott100px">
+        <div class="titleSubtitleCenter marginBott50px">
+            <h2 class="marginBott10px h2">Fitur Utama</h2>
+            <p class="body1"> Baca Buku Tapi Berasa Main Game? Iya, Bisa Banget!
+            </p>
+            <p class="body1"> Lawan rasa mager dengan fitur-fitur kece yang bikin kamu ketagihan baca </p>
+        </div>
+
+        <!-- dekorasi: perlu ada gambar buku buku bisa gerak kanan kiri otomatis -->
+        <div class="carouselBook marginBott50px">
+            <div class="highlightBook highlightBookYellow">
+                <img class="book" src="https://66j37b6jjr.ufs.sh/f/8NsSnXzcTD7uzCesQqXHP3fT2usLhiNYaBCnFOIRGewoUbc1"
+                    alt="buku1">
+            </div>
+            <div class="highlightBook highlightBookGreen">
+                <img class="book" src="https://66j37b6jjr.ufs.sh/f/8NsSnXzcTD7uY84C0kgw4wdPS8QpqkUzuM9Cl3h6nmRjsA5H"
+                    alt="buku2">
+            </div>
+            <div class="highlightBook highlightBookBlue">
+                <img class="book" src="https://66j37b6jjr.ufs.sh/f/8NsSnXzcTD7ulS9dGWU2LoCmq4Jhstw5XYTlBDkGMHy8n0fA"
+                    alt="buku3">
+            </div>
+            <div class="highlightBook highlightBookGreen">
+                <img class="book" src="https://66j37b6jjr.ufs.sh/f/8NsSnXzcTD7uC4CYowx5SPEeZD4nhlq8wMcyQdIYuv0tUJKz"
+                    alt="buku4">
+            </div>
+            <div class="highlightBook highlightBookYellow">
+                <img class="book" src="https://66j37b6jjr.ufs.sh/f/8NsSnXzcTD7uw9TJMVjuCrsX9JjTzUBZEqFHhP1lepcibvNV"
+                    alt="buku5">
+            </div>
+        </div>
+
+        <!-- fitur1: Strike Friends & Sharing Pencapaian-->
+        <div class="section marginBott30px">
+            <img class="imgSizeBig" src="https://66j37b6jjr.ufs.sh/f/8NsSnXzcTD7uJxsGzbOgqXpMhfd2YU7mWtL8eycBiJRK3Caz"
+                alt="imageFitur1">
+            <div>
+                <H3 class="h3 marginBott10px">Strike Friends & Sharing Pencapaian </H3>
+                <p class="body1 marginBott10px">
+                <p class="body1 marginBott10px">Bikin streak bareng teman, menyelesaikan tantang teman seperti di
+                    Duolingo, dan bagikan pencapaian setiap selesai baca buku!makin semangat bareng!</p>
+            </div>
+        </div>
+        <!-- fitur2: Waktu Hitung Baca (Read Timer)-->
+        <div class="section marginBott30px">
+            <div>
+                <H3 class="h3 marginBott10px"> Waktu Hitung Baca (Read Timer) </H3>
+                <p class="body1 marginBott10px"> Mulai baca?
+                <p class="body1">✔️ Set dulu timernya ⏳</p>
+                <p class="body1">✔️ Udah selesai? Tulis sedikit insight (1–2 kalimat aja).</p>
+                <p class="body1">✔️ Langsung tercatat di streak harian kamu dan muncul di Strike Friends! 🔥</p>
+                </p>
+            </div>
+            <img class="imgSizeBig" src="https://66j37b6jjr.ufs.sh/f/8NsSnXzcTD7uwg19aAjuCrsX9JjTzUBZEqFHhP1lepcibvNV"
+                alt="imageFitur2">
+        </div>
+
+        <!-- fitur3: Kalender Baca Bulanan-->
+        <div class="section marginBott30px">
+            <img class="imgSizeBig" src="https://66j37b6jjr.ufs.sh/f/8NsSnXzcTD7u18oVsGrlpnZVoH60gXfQN2xeLSBYk54a7uIA"
+                alt="imageFitur3">
+            <div>
+                <H3 class="h3 marginBott10px">Kalender Baca Bulanan </H3>
+                <p class="body1 marginBott10px">Punya target tapi gak tahu mulai dari mana?
+                    Tenang, kamu bisa atur buku apa aja yang mau kamu baca dalam sebulan.
+                    Tampilannya visual & rapi banget, jadi kamu bisa lihat:
+                <p class="body1">✔️ Buku apa aja yang udah kamu baca</p>
+                <p class="body1">✔️ Mana yang belum</p>
+                <p class="body1 marginBott10px">✔️ Kapan kamu mulai & selesai baca</p>
+                <p class="body1">Biar bacamu terarah dan gak berhenti di halaman pertama doang 😎</p>
+                </p>
+            </div>
+        </div>
+
+        <!-- fitur4: AI Rekomendasi Buku Pintar -->
+        <div class="section">
+            <div>
+                <H3 class="h3 marginBott10px">AI Rekomendasi Buku Pintar</H3>
+                <p class="body1 marginBott10px">Kita ngerti, selera baca tiap orang beda.
+                    Makanya, aplikasi ini pakai AI (kecerdasan buatan) buat kasih rekomendasi buku yang pas sama:
+
+                <p class="body1">✔️ Level kamu: pemula, lanjutan, atau udah #BookLover</p>
+                <p class="body1">✔️ Usia kamu: biar gak keberatan atau kebosenan</p>
+                <p class="body1 marginBott10px">✔️ Gender & minat: cowok, cewek, genre yang kamu suka (romantis?
+                    misteri? fantasi? self-help?)</p>
+
+                <p class="body1">Jadi kamu gak bakal bingung atau salah pilih buku — semuanya disesuaikan buat kamu
+                    banget!</p>
+                </p>
+            </div>
+            <img class="imgSizeBig" src="https://66j37b6jjr.ufs.sh/f/8NsSnXzcTD7uCbALrrDx5SPEeZD4nhlq8wMcyQdIYuv0tUJK"
+                alt="imageFitur4">
+        </div>
+
+    </div>
+
+
+
+    <!-- Social Proof /    testimoni -->
+    <div class="socialProofBox" id="testimoni">
+
+        <!-- tite & Subtititle : done -->
+        <div class="titleSubtitleCenter marginBott30px">
+            <h2 class="marginBott10px h2">Apa Kata Mereka yang Udah Coba?</h2>
+            <p class="body1"> Dari yang dulu males buka buku, sekarang malah bikin target bulanan. Gak cuma bantu
+                baca
+                lebih rajin, tapi juga bikin nagih! </p>
+        </div>
+
+        <div class="socialProofSection">
+            <div class="cardReviewContainer">
+
+                <!-- DOTS CONTAINER -->
+                <div class="dots" id="dotsContainer"></div>
+                <!-- SLIDER -->
+                <div class="flexReviewCard slider marginBott30px" id="slider">
+
+                    <!-- card Review 1 -->
+                    <div class="cardReview marginBott100px">
+                        <!-- Review Identitas -->
+                        <div class="sectionIdentitas marginBott30px">
+                            <!-- nama -->
+                            <div class="highlightYellow body2 marginBott10px">Karina</div>
+                            <div>
+                                <img class="photoFrame"
+                                    src=https://66j37b6jjr.ufs.sh/f/8NsSnXzcTD7uC1R8jUx5SPEeZD4nhlq8wMcyQdIYuv0tUJKz
+                                    alt="photoReviewer1">
+                            </div>
+                        </div>
+                        <!-- reviewnya  -->
+                        <div>
+                            <img src=https://66j37b6jjr.ufs.sh/f/8NsSnXzcTD7ucP1Z6Bpdl25hykvL9ZbEDFi0wuaOHfX6oUrP
+                                alt="quoteAsset1">
+                            <img src=https://66j37b6jjr.ufs.sh/f/8NsSnXzcTD7uyxI3XV7Pzd3cWfGsTUbiD5SRhHCoL6Xpxqa7
+                                alt="starAsset">
+                            <p class="body2">Sumpah, fitur streak-nya bikin aku gak mau bolong sehari pun 😭</p>
+                        </div>
+                    </div>
+
+
+                    <!-- card Review 2 -->
+                    <div class="cardReview">
+                        <!-- Review Identitas -->
+                        <div class="sectionIdentitas marginBott30px">
+                            <!-- nama -->
+                            <div class="highlightRed body2 marginBott10px">Ayu</div>
+                            <div>
+                                <img class="photoFrame"
+                                    src=https://66j37b6jjr.ufs.sh/f/8NsSnXzcTD7uY52VTnw4wdPS8QpqkUzuM9Cl3h6nmRjsA5HI
+                                    alt="photoReviewer2">
+                            </div>
+                        </div>
+                        <!-- reviewnya  -->
+                        <div>
+                            <img src=https://66j37b6jjr.ufs.sh/f/8NsSnXzcTD7uo71Nj0ADeq2QU8u0nYJlHSs7NacyEhFbp9Zr
+                                alt="quoteAsset1">
+                            <img src=https://66j37b6jjr.ufs.sh/f/8NsSnXzcTD7uyxI3XV7Pzd3cWfGsTUbiD5SRhHCoL6Xpxqa7
+                                alt="starAsset">
+                            <p class="body2">Gak nyangka aku bisa selesaiin 3 buku dalam sebulan. Thank you banget! </p>
+                        </div>
+                    </div>
+
+
+                    <!-- card Review 3 -->
+                    <div class="cardReview marginBott100px">
+                        <!-- Review Identitas -->
+                        <div class="sectionIdentitas  marginBott30px">
+                            <!-- nama -->
+                            <div class="highlightGreen body2 marginBott10px">Boby</div>
+                            <div>
+                                <img class="photoFrame"
+                                    src=https://66j37b6jjr.ufs.sh/f/8NsSnXzcTD7uqU7v1ZDcL3e94ChWNdax5iXoP08l1HVtrpyT
+                                    alt="photoReviewer3">
+                            </div>
+                        </div>
+                        <!-- reviewnya  -->
+                        <div>
+                            <img src=https://66j37b6jjr.ufs.sh/f/8NsSnXzcTD7uR39WYKySaey1bNKcsIEZQP49l5UifoW7DgVG
+                                alt="quoteAsset3">
+                            <img src=https://66j37b6jjr.ufs.sh/f/8NsSnXzcTD7uyxI3XV7Pzd3cWfGsTUbiD5SRhHCoL6Xpxqa7
+                                alt="starAsset">
+                            <p class="body2">Baru kali ini nemu aplikasi baca yang fun banget! Rasanya kayak lawan temen
+                                di game!</p>
+                        </div>
+                    </div>
+
+
+                    <!-- card Review 4 -->
+                    <div class="cardReview">
+                        <!-- Review Identitas -->
+                        <div class="sectionIdentitas marginBott30px">
+                            <!-- nama -->
+                            <div class="highlightBlue body2 marginBott10px">Agus</div>
+                            <div>
+                                <img class="photoFrame"
+                                    src=https://66j37b6jjr.ufs.sh/f/8NsSnXzcTD7uQfbeCeHKx6NgObm02oaF9EJTBcIusUdAe8Dz
+                                    alt="photoReviewer1">
+                            </div>
+                        </div>
+                        <!-- reviewnya  -->
+                        <div>
+                            <img src=https://66j37b6jjr.ufs.sh/f/8NsSnXzcTD7u4N6wnrTz18HGVUKJS6xDrkpE5iLqNoAQn9Zc
+                                alt="quoteAsset4">
+                            <img src=https://66j37b6jjr.ufs.sh/f/8NsSnXzcTD7uyxI3XV7Pzd3cWfGsTUbiD5SRhHCoL6Xpxqa7
+                                alt="starAsset">
+                            <p class="body2">Gak nyangka aku bisa selesaiin 3 buku dalam sebulan. Thank you banget! </p>
+                        </div>
+                    </div>
+
+
+                    <!-- card Review 5 -->
+                    <div class="cardReview marginBott100px">
+                        <!-- Review Identitas -->
+                        <div class="sectionIdentitas marginBott30px">
+                            <!-- nama -->
+                            <div class="highlightYellow body2 marginBott10px">Ola</div>
+                            <div>
+                                <img class="photoFrame"
+                                    src=https://66j37b6jjr.ufs.sh/f/8NsSnXzcTD7uC1R8jUx5SPEeZD4nhlq8wMcyQdIYuv0tUJKz
+                                    alt="photoReviewer5">
+                            </div>
+                        </div>
+                        <!-- reviewnya  -->
+                        <div>
+                            <img src=https://66j37b6jjr.ufs.sh/f/8NsSnXzcTD7ucP1Z6Bpdl25hykvL9ZbEDFi0wuaOHfX6oUrP
+                                alt="quoteAsset1">
+                            <img src=https://66j37b6jjr.ufs.sh/f/8NsSnXzcTD7uyxI3XV7Pzd3cWfGsTUbiD5SRhHCoL6Xpxqa7
+                                alt="starAsset">
+                            <p class="body2">“Sumpah, fitur streak-nya bikin aku gak mau bolong sehari pun 😭” </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- statistik : Done -->
+            <div class="sectionTextCenter">
+                <div>
+                    <div class="h1 marginBott10px">80% </div>
+                    <div class="body1"> jadi lebih jago ngerjain soal bacaan & ngerti konteks </div>
+                </div>
+                <div>
+                    <div class="h1 marginBott10px">77% </div>
+                    <div class="body1">lebih percaya diri dalam menyampaikan pendapat & argumen. </div>
+                </div>
+                <div>
+                    <div class="h1 marginBott10px">90% </div>
+                    <div class="body1">lebih merasa accomplished & lebih bahagia </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- closing statement - Form: Done (kurang hiasan) -->
+
+
+        <div class="">
+            <!-- background closing statement gradient-->
+            <div class="closingSetHeight ">
+                <!-- background closing statement pattern-->
+                <img class="backgroundClosingStatement assetBackgroundTopLeft"
+                    src="https://66j37b6jjr.ufs.sh/f/8NsSnXzcTD7ueXuz1TYnCvXc2H6OtVQPuK9qDIjo0J4zTU8g"
+                    alt="bintang hiasan di atas kiri form">
+                <img class="backgroundClosingStatement assetBackgroundTopRight"
+                    src="https://66j37b6jjr.ufs.sh/f/8NsSnXzcTD7uzDCffgXHP3fT2usLhiNYaBCnFOIRGewoUbc1"
+                    alt="bintang hiasan di atas kanan form">
+                <img class="backgroundClosingStatement assetBackgroundBottomLeft"
+                    src="https://66j37b6jjr.ufs.sh/f/8NsSnXzcTD7ujwKP9j8T7DCZXBueJO3LrmSFfqnp0wk9KUYi"
+                    alt="hiasan pattern di bawah kiri form">
+                <img class="backgroundClosingStatement assetBackgroundBottomRight"
+                    src="https://66j37b6jjr.ufs.sh/f/8NsSnXzcTD7uPt6lTTsCQs7rmYuqex1w5og9LSTaJMiBbcDA"
+                    alt="hiasan pattern di bawah kanan form">
+            </div>
+        </div>
+        <div class="centerClosingStatement">
+
+            <div class="closingStatement" id="closingStatement">
+                <div class="flexTitle">
+                    <img src="https://66j37b6jjr.ufs.sh/f/8NsSnXzcTD7uDmBpVh0T5ydX8PweULCVohva7sgJm3OjSMrf"
+                        alt="asset form">
+
+                    <div class="contextClosingStatement">
+                        <H2 class="h2 marginBott30px">Teman Kamu Udah Daftar Nih. Kamu Kapan? 👀</H2>
+                        <!-- Form -->
+                        <form id="my-form" class="body2">
+                            <input id="name" type="text" name="nama" placeholder="Masukan nama lengkapmu">
+                            <input id="city" type="text" name="kota" placeholder="Masukan kota tempat tinggalmu">
+                            <input id="email" type="email" name="email" placeholder="Masukan alamat emailmu">
+                            <input id="zip-code" type="number" name="kodepos" placeholder="Masukan kode pos alamatmu">
+                            <input id="status" type="checkbox">
+                            <label id="check" class="body2">Dengan ini saya menyatakan data yang diisi
+                                pada form ini adalah benar dan telah sesuai
+                            </label>
+                            <button type="submit" id="submit-form"
+                                class="CTA-Button-Form body1 marginBott10px">Submit</button>
+                            <div id="warningContainer" class="body1Red warningStyle" style="visibility: hidden;">
+                                <svg width="30px" height="30px" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg" stroke="#ffffff">
+                                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                    <g id="SVGRepo_iconCarrier">
+                                        <circle cx="12" cy="17" r="1" fill="#f45049"></circle>
+                                        <path d="M12 10L12 14" stroke="#f45049" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round"></path>
+                                        <path
+                                            d="M3.44722 18.1056L10.2111 4.57771C10.9482 3.10361 13.0518 3.10362 13.7889 4.57771L20.5528 18.1056C21.2177 19.4354 20.2507 21 18.7639 21H5.23607C3.7493 21 2.78231 19.4354 3.44722 18.1056Z"
+                                            stroke="#f45049" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round"></path>
+                                    </g>
+                                </svg>
+                                <div id='warning'>Mohon periksa form Anda sekali lagi</div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- footer : DONE -->
+    <footer class="footer">
+        <div class="footer-section">
+            <h4 class="footnoteBold">Install App</h4>
+            <a
+                href="https://www.figma.com/proto/ywPC7bWSaC2ynZyzOwFfid/PageHunt-?node-id=103-42615&t=jltEDj6RutSo8qGm-0&scaling=min-zoom&content-scaling=fixed&page-id=21%3A11673&starting-point-node-id=103%3A42615&show-proto-sidebar=1"><img
+                    src="https://utfs.io/f/d19eafcb-4011-4817-8165-48454db02f61-gmq8ma.png" alt="Get it on Google Play"
+                    class="store-badge"></a>
+            <a
+                href="https://www.figma.com/proto/ywPC7bWSaC2ynZyzOwFfid/PageHunt-?node-id=103-42615&t=jltEDj6RutSo8qGm-0&scaling=min-zoom&content-scaling=fixed&page-id=21%3A11673&starting-point-node-id=103%3A42615&show-proto-sidebar=1"><img
+                    src="https://utfs.io/f/cee83aee-59aa-4e6b-a6d7-ff395e5db837-vnrf3v.png"
+                    alt="Download on the App Store" class="store-badge"></a>
+        </div>
+        <div class="footer-section marginBott10px">
+            <h4 class="footnoteBold">Company</h4>
+            <a href="#" class="footnote">Home</a>
+            <a href="#" class="footnote">About us</a>
+            <a href="#" class="footnote">Product</a>
+            <a href="#" class="footnote">Contact Us</a>
+        </div>
+        <div class="footer-section marginBott10px">
+            <h4 class="footnoteBold">Support</h4>
+            <a href="#" class="footnote">Help Center</a>
+            <a href="#" class="footnote">Safety Center</a>
+            <a href="#" class="footnote">Community Guidelines</a>
+        </div>
+        <div class="footer-section marginBott10px">
+            <h4 class="footnoteBold">Legal</h4>
+            <a href="#" class="footnote">Cookies Policy</a>
+            <a href="#" class="footnote">Privacy Policy</a>
+            <a href="#" class="footnote">Terms of Service</a>
+            <a href="#" class="footnote">Law Enforcement</a>
+        </div>
+
+        <div class="footer-section">
+            <img class="marginBott10px"
+                src="https://66j37b6jjr.ufs.sh/f/8NsSnXzcTD7unp8Ku4PT5NjY4JQhexVB8WZqrm7HCvti03w1" alt="PageHunt Logo">
+            <h4 class="footnoteBold">Supported by:</h4>
+            <a href="https://skilvul.com" id="link"><img class="footer-logoimg"
+                    src="https://utfs.io/f/b5a78f14-11b4-49c3-89a3-f75763fe99c5-3z3iys.svg"
+                    alt="Logo Skilvul Link to the Skilvul Website"></a>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+    <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
+</body>
+
+</html>
+
+</html>
