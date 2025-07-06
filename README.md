@@ -1,20 +1,18 @@
 # Book Reading Gamification App – Landing Page
 
-This repository contains the source code for the **Landing Page** of the Book Reading Gamification App.  
+This repository contains the source code for the PageHunt!'s desktop Landing Page (the Book Reading Gamification App).  
 The app helps beginner teen readers build a consistent reading habit and supports book lovers in maintaining their reading routine through fun gamified features.
 
 ## 🚀 Features Highlighted on the Landing Page
 - **Strike Friends (like Duolingo)**: Read daily and keep your streak with friends.
-- **Reading Timer + Quick Journal**: Track reading time and note key insights.
-- **Auto Share + Review**: Share completed books and reviews with your community.
+- **Reading Timer**: Track reading time and note key insights.
 - **AI Book Recommendations**: Get personalized suggestions based on level, age, and interests.
 - **Reading Calendar**: Visualize your monthly reading progress.
-- **Monthly/Yearly Goals**: Set and track your reading targets.
 
 ## 🛠 Tech Stack
 - HTML5
 - CSS3
-- JavaScript (if used for interactions)
+- JavaScript
 
 ## 📂 Project Structure
 ```
@@ -43,6 +41,3 @@ Coming soon! (Or insert your deployed link here)
 - Add interactive elements (e.g. preview of strike streak, dynamic calendar).
 - Improve accessibility (ARIA labels, contrast).
 - Optimize for SEO.
-
-## 📄 License
-This project is licensed under the MIT License – see the [LICENSE](LICENSE) file for details.
