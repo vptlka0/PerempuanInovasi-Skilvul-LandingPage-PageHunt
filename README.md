@@ -18,7 +18,7 @@ The app helps beginner teen readers build a consistent reading habit and support
 ```
 /assets          → images, icons, fonts
 /css             → stylesheets
-/js              → scripts (if any)
+/js              → scripts
 index.html       → main landing page file
 README.md        → project documentation
 ```
