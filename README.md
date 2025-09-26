@@ -1,43 +1,67 @@
-# Book Reading Gamification App – Landing Page
+# 🚀 Live Demo
 
-This repository contains the source code for the PageHunt!'s desktop Landing Page (the Book Reading Gamification App).  
-The app helps beginner teen readers build a consistent reading habit and supports book lovers in maintaining their reading routine through fun gamified features.
+👉 Check out the deployed landing page here: [https://vptlka0.github.io/PerempuanInovasi-Skilvul-LandingPage-PageHunt/](https://vptlka0.github.io/PerempuanInovasi-Skilvul-LandingPage-PageHunt/) 🌐
 
-## 🚀 Features Highlighted on the Landing Page
-- **Strike Friends (like Duolingo)**: Read daily and keep your streak with friends.
-- **Reading Timer**: Track reading time and note key insights.
-- **AI Book Recommendations**: Get personalized suggestions based on level, age, and interests.
-- **Reading Calendar**: Visualize your monthly reading progress.
+# Perempuan Inovasi Skilvul Landing Page: PageHunt! 🎮📚
 
-## 🛠 Tech Stack
-- HTML5
-- CSS3
-- JavaScript
+## Project Explanation
 
-## 📂 Project Structure
+PageHunt! is a gamified reading app designed to make reading fun and engaging for everyone in Indonesia. 📖✨ Inspired by game mechanics, PageHunt! helps users build strong reading habits, compete with friends, and track their progress in a playful way. The app addresses Indonesia’s literacy challenges by making reading attractive, social, and rewarding.
+
+**Key highlights:**
+
+- 📉 Indonesia ranks 70th out of 80 countries in global literacy (PISA 2022).
+- 🎯 PageHunt! motivates users to read more through challenges, streaks, and XP scores.
+- 👥 Social features let you compete and collaborate with friends.
+- 🤖 AI-powered book recommendations tailored to your level, age, and interests.
+- 🗓️ Monthly reading calendar to set and track goals.
+- � Real testimonials from users who improved their reading habits.
+
+PageHunt! is more than an app—it’s a movement to make reading cool, consistent, and community-driven! 🚀
+
+## Features
+
+- 📱 Responsive design for desktop and mobile
+- 🎮 Gamified reading experience: challenges, streaks, XP, and friend competitions
+- 🧑‍🤝‍🧑 Social proof: testimonials and stats
+- 🤖 Smart book recommendations using AI
+- 🗓️ Monthly reading calendar
+- ⚡ Interactive elements powered by JavaScript
+- 🛠️ Easy to customize and extend
+
+## Technologies Used
+
+- � HTML
+- 🎨 CSS
+- 🧩 JavaScript
+
+## Getting Started
+
+To run the project locally: 🏡
+
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/vptlka0/PerempuanInovasi-Skilvul-LandingPage-PageHunt.git
+   ```
+2. Open `index.html` in your browser. 🌈
+
+## Deployment
+
+The landing page is deployed and accessible at:
+[https://vptlka0.github.io/PerempuanInovasi-Skilvul-LandingPage-PageHunt/](https://vptlka0.github.io/PerempuanInovasi-Skilvul-LandingPage-PageHunt/) 🚀
+
+## Project Structure
+
 ```
-/assets          → images, icons, fonts
-/css             → stylesheets
-/js              → scripts
-index.html       → main landing page file
-README.md        → project documentation
+📄 index.html      # Main HTML file
+🎨 Style.css       # Stylesheet
+🧩 main.js         # JavaScript functionality
 ```
 
-## 🌐 Live Preview
-Coming soon! (Or insert your deployed link here)
+## Contributing
 
-## 📌 How to Run Locally
-1. Clone the repository:
-   ```
-   https://github.com/vptlka0/PerempuanInovasi-Skilvul-LandingPage-PageHunt.git
-   ```
-2. Open the `index.html` file in your browser:
-   ```
-   Open index.html with your browser
-   ```
+Feel free to fork the repository and submit pull requests for improvements or new features. 🤗
 
-## ✨ Future Improvements
-- Make the landing page fully responsive for mobile and tablet.
-- Add interactive elements (e.g. preview of strike streak, dynamic calendar).
-- Improve accessibility (ARIA labels, contrast).
-- Optimize for SEO.
+## License
+
+This project is open source and available under the MIT License. 📄
